@@ -1,5 +1,7 @@
+type ItemsType = Array<string>;
+
 const shoppingCart = {
-  items: [],
+  items: ["Lemon"],
 };
 
 console.log(shoppingCart.items);

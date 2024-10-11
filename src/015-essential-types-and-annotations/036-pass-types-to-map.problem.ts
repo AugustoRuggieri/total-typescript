@@ -1,6 +1,13 @@
 // CODE
 
-const userMap = new Map();
+import { UseFormReturn } from "react-hook-form";
+
+type User = {
+    name: string,
+    age: number
+}
+
+const userMap: Map<number, User> = new Map();
 
 // TESTS
 
