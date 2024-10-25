@@ -1,6 +1,14 @@
 import { expect, it } from "vitest";
 
-class CanvasNode {}
+class CanvasNode {
+  public readonly x: number;
+  public readonly y: number;
+
+  public constructor() {
+    this.x = 0;
+    this.y = 0;
+  }
+}
 
 it("Should store some basic properties", () => {
   const canvasNode = new CanvasNode();

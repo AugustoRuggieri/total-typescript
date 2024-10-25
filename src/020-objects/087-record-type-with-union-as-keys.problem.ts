@@ -1,6 +1,11 @@
 type Environment = "development" | "production" | "staging";
 
-type Configurations = unknown;
+interface Request {
+  apiBaseUrl: string;
+  timeout: number;
+}
+
+type Configurations = Record<Environment, Request>
 
 const configurations: Configurations = {
   development: {
